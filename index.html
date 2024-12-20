@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
 	<meta charset="UTF-8">
@@ -9,15 +9,15 @@
 	<link rel="shortcut icon" href="./Assets/Complx_Logo.webp" type="image/x-icon">
 </head>
 
-<body class="bg-white text-darkGray">
+<body class="bg-white text-darkGray scroll-smooth">
 	<!-- NavBar -->
 	<nav class=" fixed bottom-4 z-50 w-full h-16 flex justify-center items-end bg-transparent md:top-0  ">
 		<div class="flex px-1 bg-transparent rounded-lg shadow-xl  justify-center ">
 
 			<div class="nav-con flex gap-4 text-base font-san  border border-bord rounded-2xl px-4 py-1 backdrop-blur">
 				<div class="nav-btn gap-2 px-2 py-1.5 text-center text-textGray no-underline rounded-xl ">
-					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#"
-						aria-pressed="true" tabindex="0">
+					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#Home"
+						aria-pressed="true" tabindex="0" onclick="scroller(0)">
 						<img src="./Assets/home-9-fill.png" alt="">
 						<div class="hidden sm:block">Home</div>
 					</a>
@@ -25,7 +25,7 @@
 
 
 				<div class="nav-btn gap-2 px-2 py-1.5 text-center text-textGray no-underline rounded-xl">
-					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#"
+					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#AboutUs"
 						aria-pressed="false" tabindex="0">
 						<img src="./Assets/info-card-line.png" alt="">
 						<div class="hidden sm:block">About</div>
@@ -35,14 +35,14 @@
 
 
 				<div class="nav-btn gap-2 px-2 py-1.5 text-center text-textGray no-underline rounded-xl">
-					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#"
+					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#Platform"
 						aria-pressed="false" tabindex="0">
 						<img src="./Assets/function-line.png" alt="">
 						<div class="hidden sm:block">Project</div>
 					</a>
 				</div>
 				<div class="nav-btn gap-2 px-2 py-1.5 text-center text-textGray no-underline rounded-xl">
-					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#"
+					<a class=" flex items-center gap-2 text-center text-textGray no-underline rounded-xl" href="#Roadmap"
 						aria-pressed="false" tabindex="0">
 						<img src="./Assets/timeline-view.png" alt="">
 						<div class="hidden sm:block">Roadmap</div>
@@ -53,8 +53,8 @@
 	</nav>
 	<!-- NavBar End -->
 	<!-- Hero Section -->
-	<section class="hero bg-darkBg h-3/4  w-full relative">
-		<img src="./Assets/hero.webp" alt="group-young-people-training-gym" class="h-full w-full bg-center object-cover">
+	<section id="Home" class="hero bg-darkBg h-3/4  w-full relative">
+		<img src="./Assets/hero.webp" alt="group-young-people-training-gym" class="h-full w-full bg-center object-cover brightness-50">
 		<div
 			class="hero-content text-center w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 			<h1 class="text-4xl md:text-5xl font-bold text-white">Welcome to Complx Culture</h1>
@@ -62,15 +62,10 @@
 			</p>
 			<button class="btn btn-primary mt-4 bg-royal py-4 px-6 rounded-md text-white">Join Now</button>
 		</div>
-		<div class=" scroll-down-container">
-			<div class="arrow-container">
-				<img src="arrow-down-circle-line.png" alt="">
-			</div>
-		</div>
 	</section>
 	<!-- hero Section END -->
 	<!-- About Section -->
-	<section class="max-w-7xl mx-auto px-6 py-12">
+	<section id="AboutUs" class="max-w-7xl mx-auto px-6 py-12">
 		<h1 class="text-4xl font-bold text-center mb-4 border-t-2  pt-4">About Us</h1>
 		<p class="text-center text-lg text-gray-400 mb-8  pb-8">
 			The Complx Culture Web3-powered fitness platform is designed to motivate people to stay active while
@@ -81,7 +76,7 @@
 		</p>
 
 		<!-- Core Values Section -->
-		<h2 class="text-4xl font-semibold text-center mb-10 border-t-2 pt-5">Why Join Us?</h2>
+		<h2 id="AboutUs" class="text-4xl font-semibold text-center mb-10 border-t-2 pt-5">Why Join Us?</h2>
 		<div class="flex flex-col md:flex-row justify-center items-center flex-wrap lg:flex-nowrap gap-8 mb-12">
 			<!-- Value 1 -->
 			<div class="text-center w-full sm:w-1/3 p-4 sm:scale-100 ">
@@ -164,88 +159,67 @@
 	<!-- About Section END -->
 <!-- project detail Section -->
 <!-- Key Features Section -->
-<section class="max-w-7xl mx-auto px-6 py-12">
+<section id="Platform" class="max-w-7xl mx-auto px-6 py-12">
 	<h1 class="text-4xl font-bold text-center mb-8 border-t-2 pt-4 text-gray-800">Core Features of the Platform</h1>
-
-	<!-- Fitness Data Dashboard -->
-	<div class="mb-12 flex flex-col sm:flex-row items-start">
-		<img src="./Assets/vecteezy_isometric-illustration-concept-data-analysis-and-online_.jpg" alt="Dashboard Icon" class="h-36 w-36 mr-4 mb-4 sm:mb-0">
-		<div>
-			<h2 class="text-2xl font-semibold mb-4 text-gray-700 hover:text-gray-900 transition-colors duration-300">Fitness
-				Data Dashboard</h2>
-			<p class="text-gray-600 mb-4"> Personalized user dashboard that consolidates fitness data</p>
-			<ul class="list-disc list-inside text-gray-600">
-				<li>Display running stats, challenges completed, and XP earned.</li>
-				<li>Offer insights through graphs and progress reports.</li>
-			</ul>
+	<div class="feature-con w-full flex flex-col items-center gap-8">
+		<!-- Fitness Data Dashboard -->
+		<div class="container feature-item mb-12 flex flex-col md:flex-row items-center md:justify-center md:gap-4">
+			<img src="./Assets/undraw_dashboard_p93p.svg" alt="Dashboard Icon" class="h-36 w-36 mb-4 md:mb-0">
+			<div class="text-center md:text-left">
+				<h2 class="text-2xl font-semibold mb-4 hover:text-gray-900 transition-colors duration-300">Fitness Data Dashboard</h2>
+				<p class="text-gray-600 mb-4">Personalized user dashboard that consolidates fitness data</p>
+			</div>
 		</div>
-	</div>
 
-	<!-- Blockchain Tokenomics -->
-	<div class="mb-12 flex flex-col sm:flex-row items-start">
-		<img src="./Assets/tokenomics-icon.svg" alt="Tokenomics Icon" class="h-12 w-12 mr-4 mb-4 sm:mb-0">
-		<div>
-			<h2 class="text-2xl font-semibold mb-4 text-gray-700 hover:text-gray-900 transition-colors duration-300">
-				Blockchain Tokenomics</h2>
-			<p class="text-gray-600 mb-4">Complx Coins as the reward currency.</p>
-			<ul class="list-disc list-inside text-gray-600">
-				<li>Support wallet connection (e.g., Phantom or Magic.link) to view balances, stake tokens, and
-					redeem rewards.</li>
-				<li>Enable token burning and staking mechanisms for long-term value.</li>
-			</ul>
+		<!-- Blockchain Tokenomics -->
+		<div class="container feature-item mb-12 flex flex-col md:flex-row items-center md:justify-center md:gap-4">
+			<img src="./Assets/undraw_digital-currency_u5p6.svg" alt="Tokenomics Icon" class="h-36 w-36 mb-4 md:mb-0">
+			<div class="text-center md:text-left">
+				<h2 class="text-2xl font-semibold mb-4 hover:text-gray-900 transition-colors duration-300">Blockchain Tokenomics</h2>
+				<p class="text-gray-600 mb-4">Complx Coins as the reward currency.</p>
+			</div>
 		</div>
-	</div>
 
-	<!-- Community Integration -->
-	<div class="mb-12 flex flex-col sm:flex-row items-start">
-		<img src="./Assets/community-icon.svg" alt="Community Icon" class="h-12 w-12 mr-4 mb-4 sm:mb-0">
-		<div>
-			<h2 class="text-2xl font-semibold mb-4 text-gray-700 hover:text-gray-900 transition-colors duration-300">Community
-				Integration</h2>
-			<p class="text-gray-600 mb-4">Sync Discord roles and levels with user profiles on the platform.</p>
-			<ul class="list-disc list-inside text-gray-600">
-				<li>Redeem tokens for discounts, exclusive roles, or physical rewards.</li>
-			</ul>
+		<!-- Community Integration -->
+		<div class="container feature-item mb-12 flex flex-col md:flex-row items-center md:justify-center md:gap-4">
+			<img src="./Assets/undraw_community_fv55.svg" alt="Community Icon" class="h-36 w-36 mb-4 md:mb-0">
+			<div class="text-center md:text-left">
+				<h2 class="text-2xl font-semibold mb-4 hover:text-gray-900 transition-colors duration-300">Community Integration</h2>
+				<p class="text-gray-600 mb-4">Sync Discord roles and levels with user profiles on the platform.</p>
+			</div>
 		</div>
-	</div>
 
-	<!-- E-commerce Expansion -->
-	<div class="mb-12 flex flex-col sm:flex-row items-start">
-		<img src="./Assets/ecommerce-icon.svg" alt="E-commerce Icon" class="h-12 w-12 mr-4 mb-4 sm:mb-0">
-		<div>
-			<h2 class="text-2xl font-semibold mb-4 text-gray-700 hover:text-gray-900 transition-colors duration-300">
-				E-commerce Expansion</h2>
-			<p class="text-gray-600 mb-4">Token-based discounts directly in the Shopify store.</p>
-			<ul class="list-disc list-inside text-gray-600">
-				<li>Support payments in fiat and crypto.</li>
-				<li>Link purchases to user profiles, allowing for gamified shopping experiences.</li>
-			</ul>
+		<!-- E-commerce Expansion -->
+		<div class="container feature-item mb-12 flex flex-col md:flex-row items-center md:justify-center md:gap-4">
+			<img src="./Assets/undraw_web-shopping_m3o2.svg" alt="E-commerce Icon" class="h-36 w-36 mb-4 md:mb-0">
+			<div class="text-center md:text-left">
+				<h2 class="text-2xl font-semibold mb-4 hover:text-gray-900 transition-colors duration-300">E-commerce Expansion</h2>
+				<p class="text-gray-600 mb-4">Token-based discounts directly in the Shopify store.</p>
+			</div>
 		</div>
-	</div>
 
-	<!-- Gamified Experience -->
-	<div class="mb-12 flex flex-col sm:flex-row items-start">
-		<img src="./Assets/gamified-icon.svg" alt="Gamified Icon" class="h-12 w-12 mr-4 mb-4 sm:mb-0">
-		<div>
-			<h2 class="text-2xl font-semibold mb-4 text-gray-700 hover:text-gray-900 transition-colors duration-300">Gamified
-				Experience</h2>
-			<p class="text-gray-600 mb-4">A reward system tied to real-world fitness and community participation.</p>
+		<!-- Gamified Experience -->
+		<div class="container feature-item mb-12 flex flex-col md:flex-row items-center md:justify-center md:gap-4">
+			<img src="./Assets/ganifie.svg" alt="Gamified Icon" class="h-36 w-36 mb-4 md:mb-0">
+			<div class="text-center md:text-left">
+				<h2 class="text-2xl font-semibold mb-4 hover:text-gray-900 transition-colors duration-300">Gamified Experience</h2>
+				<p class="text-gray-600 mb-4">A reward system tied to real-world fitness and community participation.</p>
+			</div>
 		</div>
-	</div>
 
-	<!-- Transparency and Security -->
-	<div class="mb-12 flex flex-col sm:flex-row items-start">
-		<img src="./Assets/security-icon.svg" alt="Security Icon" class="h-12 w-12 mr-4 mb-4 sm:mb-0">
-		<div>
-			<h2 class="text-2xl font-semibold mb-4 text-gray-700 hover:text-gray-900 transition-colors duration-300">
-				Transparency and Security</h2>
-			<p class="text-gray-600 mb-4">Blockchain integration for token management.</p>
-			<p class="text-gray-600 mb-4">Secure user authentication through wallet connections.</p>
+		<!-- Transparency and Security -->
+		<div class="container feature-item mb-12 flex flex-col md:flex-row items-center md:justify-center md:gap-4">
+			<img src="./Assets/undraw_security-on_btwg.svg" alt="Security Icon" class="h-36 w-36 mb-4 md:mb-0">
+			<div class="text-center md:text-left">
+				<h2 class="text-2xl font-semibold mb-4 hover:text-gray-900 transition-colors duration-300">Transparency and Security</h2>
+				<p class="text-gray-600 mb-4">Blockchain integration for token management.</p>
+				<p class="text-gray-600 mb-4">Secure user authentication through wallet connections.</p>
+			</div>
 		</div>
 	</div>
 </section>
-	<!-- Project Section -->
-	<section class="bg-white text-darkGray">
+	<!-- Roadmap Section -->
+	<section id="Roadmap" class="bg-white text-darkGray">
 		<div class="max-w-7xl mx-auto px-6 py-12 flex flex-col items-center justify-center">
 			<h1 class="text-4xl font-bold text-center mb-4 border-t-2 pt-4">OUR DEVELOPMENT ROADMAP</h1>
 			<p class="text-center text-lg text-gray-400 mb-8 border-gray-400 pb-8">
